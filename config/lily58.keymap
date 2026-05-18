@@ -9,26 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-/ {
-    macros {
-        em1: em1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <1>;
-            bindings =
-                <&macro_tap>,
-                <&kp K &kp R &kp I &kp S &kp C &kp A &kp B &kp L &kp E &kp S &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-        };
+&lt {
+    quick-tap-ms = <200>;
+    tapping-term-ms = <150>;
+    flavor = "hold-preferred";
+};
 
-        em2: em2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <1>;
-            bindings =
-                <&macro_tap>,
-                <&kp C &kp R &kp I &kp S &kp T &kp I &kp A &kp N &kp M &kp I &kp T &kp U &kp L &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-        };
-    };
+&mt {
+    tapping-term-ms = <200>;
+    flavor = "hold-preferred";
 };
 
 / {
@@ -128,11 +117,11 @@
 
         MOUSE {
             bindings = <
-&trans  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_CLR_ALL  &trans          &trans          &trans           &trans  &trans
-&trans  &trans            &trans             &trans        &trans        &trans                          &trans          &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans  &trans
-&trans  &trans            &trans             &trans        &trans        &trans                          &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &ext_power EP_ON  &ext_power EP_OFF  &trans        &trans        &trans        &trans    &trans  &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans  &trans
-                                             &trans        &trans        &trans        &trans    &trans  &trans          &trans          &trans
+&trans  &trans            &kp LC(LG(LEFT))   &kp LC(LS(TAB))  &kp LC(TAB)   &kp LC(LG(RIGHT))                    &trans  &trans          &trans          &trans           &trans  &bt BT_CLR_ALL
+&trans  &trans            &trans             &trans           &trans        &trans                               &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans  &trans
+&trans  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                         &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &ext_power EP_ON  &ext_power EP_OFF  &trans           &trans        &trans             &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans  &trans
+                                             &trans           &trans        &trans             &trans    &trans  &trans  &trans          &trans
             >;
         };
     };
