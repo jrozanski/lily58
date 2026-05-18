@@ -102,6 +102,8 @@
 &trans  &ext_power EP_ON  &ext_power EP_OFF  &trans           &trans        &trans             &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans  &trans
                                              &trans           &trans        &trans             &trans    &trans  &trans  &trans          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
