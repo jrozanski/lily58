@@ -59,13 +59,6 @@
         compatible = "zmk,keymap";
 
         BASE {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   =   |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // |  LGUI |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ^   |   ;   |
-            // |  SHFT |  Z  |  X  |  C   |  V   |  B   |   , <  |  |  . >  |  N   |  M    |  /    |  <-  |   v   |   ->  |
-            //                   | LOWER  | ALT  | CTRL |  ENTER |  | SPACE | BSPC | RAISE |RSHFTCAPS|
-
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                        &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp SINGLE_QUOTE
 &kp TAB    &kp Q   &kp W   &kp E             &kp R         &kp T                                         &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
@@ -78,13 +71,6 @@
         };
 
         NAV {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BSPC  | EM1 | EM2 |      |      |      |                   |  F1  |  F2   |  F3   |  F4  |  F5   |  F6   |
-            // | SPACE |     |     |      |      |      |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |BTCLR  | BT1 | BT2 |  BT3 | BT4  |EPOFF	| EXPP_ON|  |       |      |       |       |      |       |  DEL  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans         &trans        &trans       &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp HOME      &kp PAGE_DOWN  &kp UP_ARROW  &kp PAGE_UP  &kp END        &trans
@@ -97,13 +83,6 @@
         };
 
         SYMBOL {
-            // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   | MUTE |       |       | PREV  |PL/PSE | NEXT  |
-            // |       |     |     |      |      |      |                   |      |       |   ~   |   (   |   )   | VOL_UP|
-            // |       |     |     |      |      |      |                   |      |       |  `~   |   '   |   "   |VOL_DWN|
-            // |       |     |     |      |      |      |        |  |       |      |       |       |   [   |   ]   |  \|   |
-            //                     |      |      |      |        |  |       |      |       |       |
-
             bindings = <
 &trans  &kp F1         &kp F2      &kp F3         &kp F4        &kp F5                        &kp F6       &kp F7         &kp F8         &kp F9        &kp F10           &trans
 &trans  &kp LS(MINUS)  &kp NUBS    &kp LS(NUBS)   &kp FSLH      &kp LS(N5)                    &kp LS(N6)   &kp MINUS      &kp LS(EQUAL)  &kp EQUAL     &kp LS(N8)        &kp LS(N2)
