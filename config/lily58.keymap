@@ -125,9 +125,7 @@
                               &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 BACKSPACE   &kp ENTER  &kp RGUI   &kp RALT
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
     };
 };
