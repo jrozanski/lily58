@@ -3,8 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 8    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -21,6 +20,11 @@
 &mt {
     tapping-term-ms = <200>;
     flavor = "hold-preferred";
+};
+
+&mmv {
+    time-to-max-speed-ms = <1000>;
+    acceleration-exponent = <1>;
 };
 
 / {
