@@ -55,7 +55,7 @@
         };
 
         num-lock {
-            bindings = <&to 1>;
+            bindings = <&to 2>;
             key-positions = <1 11>;
         };
 
@@ -74,7 +74,7 @@
 &kp TAB    &kp Q   &kp W   &kp E             &kp R         &kp T                                          &kp Y      &kp U     &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
 &kp LCTRL  &kp A   &kp S   &kp D             &kp F         &kp G                                          &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp DELETE
 &kp LSHFT  &kp Z   &kp X   &kp C             &kp V         &kp B         &kp K_MUTE     &kp C_PLAY_PAUSE  &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                           &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 BACKSPACE   &kp ENTER  &kp RGUI  &kp RALT
+                           &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 SPACE    &lt 3 BACKSPACE   &kp ENTER  &kp RGUI  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -106,11 +106,11 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &kp LC(LG(LEFT))  &kp LC(LS(TAB))  &kp LC(TAB)   &kp LC(LG(RIGHT))                            &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans            &trans           &trans        &trans                                       &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans  &trans
-&trans  &trans  &trans            &trans           &trans        &trans                                       &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &ext_power EP_OFF
-&trans  &trans  &trans            &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_CLR_ALL    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans  &ext_power EP_ON
-                                  &trans           &trans        &trans             &trans            &trans  &trans  &trans          &trans
+&trans  &trans  &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3                         &trans  &trans          &trans          &trans           &trans  &bt BT_CLR_ALL
+&trans  &trans  &trans            &trans           &trans        &trans                               &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans  &trans
+&trans  &trans  &trans            &trans           &trans        &trans                               &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &ext_power EP_OFF
+&trans  &trans  &kp LG(LC(LEFT))  &kp LS(LC(TAB))  &kp LS(TAB)   &kp LG(LC(RIGHT))  &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans  &ext_power EP_ON
+                                  &trans           &trans        &trans             &trans    &trans  &trans  &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -122,7 +122,7 @@
 &trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)         &kp LS(R)     &kp LS(T)                                      &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)  &kp SINGLE_QUOTE
 &trans  &kp LS(A)  &kp LS(S)  &kp LS(D)         &kp LS(F)     &kp LS(G)                                      &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp SEMI   &kp DELETE
 &trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)         &kp LS(V)     &kp LS(B)     &kp K_MUTE     &kp C_PLAY_PAUSE  &kp LS(N)  &kp LS(M)  &kp COMMA  &kp DOT    &kp FSLH   &kp RIGHT_SHIFT
-                              &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 BACKSPACE   &kp ENTER  &kp RGUI   &kp RALT
+                              &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 SPACE    &lt 3 BACKSPACE   &kp ENTER  &kp RGUI   &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PAGE_UP PAGE_DOWN>;
