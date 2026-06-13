@@ -62,7 +62,7 @@
         };
 
         num-lock {
-            bindings = <&to 2>;
+            bindings = <&to 1>;
             key-positions = <1 11>;
         };
 
