@@ -116,7 +116,7 @@
 &to 5   &trans  &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3                         &trans  &trans          &trans          &trans           &trans  &bt BT_CLR_ALL
 &trans  &trans  &trans            &trans           &trans        &trans                               &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans  &trans
 &trans  &trans  &trans            &trans           &trans        &trans                               &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &ext_power EP_OFF
-&to 0   &trans  &kp LG(LC(LEFT))  &kp LS(LC(TAB))  &kp LC(TAB)   &kp LG(LC(RIGHT))  &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans  &ext_power EP_ON
+&trans  &trans  &kp LG(LC(LEFT))  &kp LS(LC(TAB))  &kp LC(TAB)   &kp LG(LC(RIGHT))  &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans  &ext_power EP_ON
                                   &trans           &trans        &trans             &trans    &trans  &trans  &trans          &trans
             >;
 
@@ -140,7 +140,7 @@
 &trans       &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &bootloader  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 0        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &to 0
                              &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
