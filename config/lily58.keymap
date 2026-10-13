@@ -143,10 +143,10 @@
 
         MOUSE {
             bindings = <
-&to 5   &trans  &trans            &trans           &trans       &trans                               &trans  &trans          &trans          &trans           &kp C_MUTE     &kp C_VOLUME_UP
-&trans  &trans  &trans            &trans           &trans       &trans                               &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &kp LS(LG(N))  &kp C_VOLUME_DOWN
-&trans  &trans  &trans            &trans           &trans       &trans                               &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans         &trans
-&trans  &trans  &kp LG(LC(LEFT))  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(LC(RIGHT))  &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans         &trans
+&to 5   &trans  &trans            &trans           &trans       &trans                               &trans  &trans          &trans          &trans           &trans              &trans
+&trans  &trans  &trans            &trans           &trans       &trans                               &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &kp LS(LG(C_MUTE))  &kp C_VOLUME_UP
+&trans  &trans  &trans            &trans           &trans       &trans                               &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LS(LG(N))       &kp C_VOLUME_DOWN
+&trans  &trans  &kp LG(LC(LEFT))  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(LC(RIGHT))  &trans    &trans  &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans              &trans
                                   &trans           &trans       &trans             &trans    &trans  &trans  &trans          &trans
             >;
 
